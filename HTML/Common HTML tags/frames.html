@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Playground — Frames & Embeds</title>
+  <!-- Favicon -->
+  <link rel="icon" href="sources/icons8-html-5-48.png" type="">
+</head>
+<body>
+
+  <header>
+    <h1>Frames, Embeds & Multimedia Examples</h1>
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="frames.html">Frames & Embeds</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section>
+      <h2>IFrame Example (Embedding a Webpage)</h2>
+      <p>The <code>&lt;iframe&gt;</code> element allows embedding another webpage inside the current page.</p>
+      <iframe src="https://www.w3schools.com/html/" width="600" height="300" title="Example Website" style="border:1px solid #333;"></iframe>
+    </section>
+
+ 
+    <section>
+      <h2>Embed Tag Example</h2>
+      <p>The <code>&lt;embed&gt;</code> tag can display PDFs, videos, or other types of content.</p>
+      <embed src="sources/file-sample_150kB.pdf" type="application/pdf" width="600" height="400">
+    </section>
+
+    <section>
+      <h2>Object Tag Example</h2>
+      <p>The <code>&lt;object&gt;</code> tag can embed external resources like images, PDFs, or even HTML.</p>
+      <object data="sources/file-sample_150kB.pdf" type="application/pdf" width="600" height="400">
+        <p>Your browser does not support embedded PDF. <a href="assets/sample.pdf">Download PDF</a></p>
+      </object>
+    </section>
+
+    <section>
+      <h2>Audio Example</h2>
+      <p>Using <code>&lt;audio&gt;</code> to play sound files:</p>
+
+      <h4>Local Audio File:</h4>
+      <audio controls>
+        <source src="sources/file_example_MP3_700KB.mp3" type="audio">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h4>Online Audio Stream:</h4>
+      <audio controls>
+        <source src="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Video Example</h2>
+      <p>Using <code>&lt;video&gt;</code> to play local and remote video files:</p>
+
+      <h4>Local Video File:</h4>
+      <video controls width="600">
+        <source src="sources/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h4>YouTube Embedded Video (IFrame):</h4>
+      <iframe 
+        width="600" 
+        height="350" 
+        src="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=2679s" 
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Deprecated Example: Frameset</h2>
+      <p>
+        The <code>&lt;frameset&gt;</code> and <code>&lt;frame&gt;</code> elements were used in older HTML versions to divide the browser window into sections.  
+        They are **deprecated** and should no longer be used, but are shown here for reference.
+      </p>
+      <pre>
+&lt;frameset cols="50%,50%"&gt;
+  &lt;frame src="index.html"&gt;
+  &lt;frame src="about.html"&gt;
+&lt;/frameset&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>Image Embedding Examples</h2>
+      <p>Local and online image examples with positioning:</p>
+
+      <h4>Local Image (Centered):</h4>
+      <div style="text-align:center;">
+        <img src="sources/download.jpg" alt="Local HTML Example" width="300">
+      </div>
+
+      <h4>Online Image (Right Aligned):</h4>
+      <div style="text-align:right;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" width="150">
+      </div>
+
+      <h4>Left Aligned Image (with text wrap):</h4>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="100" align="left" style="margin-right:10px;">
+      <p>
+        This text flows around the image. In older HTML, the <code>align</code> attribute was used to control image alignment, but it is now deprecated.  
+        Modern CSS techniques (like <code>float</code> or <code>flexbox</code>) are preferred for layout.
+      </p>
+      <div style="clear:both;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Playground — Frames & Embeds</p>
+  </footer>
+</body>
+</html>

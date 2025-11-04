@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Playground — Contact</title>
+  <link rel="icon" href="sources/icons8-html-5-48.png" type="">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="frames.html">Frames & Embeds</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Contact Form (Enhanced)</h2>
+      <p>Fill in the form below and click "Send". This form is for demonstration — no real submission will occur.</p>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+  
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="reason">Reason for Contact:</label><br>
+        <select id="reason" name="reason">
+          <option value="feedback">Feedback</option>
+          <option value="support">Support</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+          <label><input type="radio" name="contact_method" value="email" checked> Email</label><br>
+          <label><input type="radio" name="contact_method" value="phone"> Phone</label><br>
+          <label><input type="radio" name="contact_method" value="none"> No Preference</label>
+        </fieldset><br>
+
+        <fieldset>
+          <legend>Topics of Interest:</legend>
+          <label><input type="checkbox" name="topics" value="html"> HTML</label><br>
+          <label><input type="checkbox" name="topics" value="css"> CSS</label><br>
+          <label><input type="checkbox" name="topics" value="javascript"> JavaScript</label><br>
+          <label><input type="checkbox" name="topics" value="legacy"> Legacy HTML</label>
+        </fieldset><br>
+
+        <label for="date">Preferred Meeting Date:</label><br>
+        <input type="date" id="date" name="meeting_date"><br><br>
+
+        <label for="file">Attach File (optional):</label><br>
+        <input type="file" id="file" name="attachment"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message here..."></textarea><br><br>
+
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Our Contact Info</h2>
+      <address>
+        Reach us at:<br>
+        <a href="abdulwahidtehaawel@gmail.com">abdulwahidtehaawel@gmail.com</a><br>
+        Addis Ababa,Ethiopia<br>
+      </address>
+
+      <h3>Map (Embedded using IFrame)</h3>
+      <p>Below is an example of an embedded map from OpenStreetMap:</p>
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=10.0%2C50.0%2C11.0%2C51.0"
+        width="600"
+        height="400"
+        style="border:1px solid #999;"
+        title="Map embed example">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Playground — Contact</p>
+  </footer>
+</body>
+</html>
