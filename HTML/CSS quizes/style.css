@@ -1,0 +1,59 @@
+/* quiz-one */
+.link-one:visited, .link-one:link{
+    color: green;
+}
+
+.link-one:hover, .link-one:active{
+   color: brown; 
+   font-size: 40px;
+}
+
+/* quiz two */
+.quiz-two h1:only-of-type{
+    color: blue;
+}
+.quiz-two p:last-child {
+    color: green;
+}
+
+/* quiz-three */
+.quiz-three p:nth-child(even){
+    background-color: burlywood;
+}
+.quiz-three p:nth-child(odd){
+    background-color:green;
+}
+
+/* quiz-four */
+.quiz-four p:nth-child(odd){
+    background-color: burlywood;
+}
+
+/* quiz-five */
+.quiz-five p:nth-last-child(n+3){
+    background-color: burlywood;
+}
+
+/* quiz-six */
+.quiz-six p:nth-last-child(-n+3){
+    background-color: burlywood;
+}
+.quiz-six p:nth-child(-n+4){
+    background-color: burlywood;
+}
+
+/* quiz-seven */
+/* .quiz-seven p:nth-child(n + 4):nth-child(-n + 6){
+    background-color: burlywood;
+} */
+.quiz-seven p:nth-last-child(n + 3):nth-last-child(-n + 5){
+    background-color: burlywood;
+}
+
+/* quiz-eight */
+.quiz-eight a:after{
+    content: "[" attr(data-log) "]";
+    color: gray;
+}
+
+
